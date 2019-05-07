@@ -44,7 +44,7 @@ else if Day == "Tue": # Tuesday
         s = smtplib.SMTP('SMTP SERVER ADDRESS', SMTP SERVER PORT) 
         s.starttls() 
         s.login("SENDER@SEND.COM", "PASSWORD") 
-        s.sendmail("sender_email_id", liMon[i], message) 
+        s.sendmail("sender_email_id", liTue[i], message) 
         s.quit()  
         
 else if Day == "Wed": # Wednesday
@@ -52,7 +52,7 @@ else if Day == "Wed": # Wednesday
         s = smtplib.SMTP('SMTP SERVER ADDRESS', SMTP SERVER PORT) 
         s.starttls() 
         s.login("SENDER@SEND.COM", "PASSWORD") 
-        s.sendmail("sender_email_id", liMon[i], message) 
+        s.sendmail("sender_email_id", liWed[i], message) 
         s.quit()  
         
 else if Day == "Thu": # Thursday
@@ -60,7 +60,7 @@ else if Day == "Thu": # Thursday
         s = smtplib.SMTP('SMTP SERVER ADDRESS', SMTP SERVER PORT) 
         s.starttls() 
         s.login("SENDER@SEND.COM", "PASSWORD") 
-        s.sendmail("sender_email_id", liMon[i], message) 
+        s.sendmail("sender_email_id", liThu[i], message) 
         s.quit()  
         
 else if Day == "Fri": # Friday
@@ -68,7 +68,7 @@ else if Day == "Fri": # Friday
         s = smtplib.SMTP('SMTP SERVER ADDRESS', SMTP SERVER PORT) 
         s.starttls() 
         s.login("SENDER@SEND.COM", "PASSWORD") 
-        s.sendmail("sender_email_id", liMon[i], message) 
+        s.sendmail("sender_email_id", liFri[i], message) 
         s.quit()  
         
 else:
@@ -76,5 +76,5 @@ else:
         s = smtplib.SMTP('SMTP SERVER ADDRESS', SMTP SERVER PORT) 
         s.starttls() 
         s.login("SENDER@SEND.COM", "PASSWORD") 
-        s.sendmail("sender_email_id", liMon[i], message) 
+        s.sendmail("sender_email_id", li[i], message) 
         s.quit()  
